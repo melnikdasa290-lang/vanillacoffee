@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання - Vanilla Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <i class="fas fa-mug-hot"></i>
+                <span>Vanilla Coffee</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="booking.html" class="active">Бронювання</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="booking-section">
+            <h1 class="section-title">Бронювання столика</h1>
+            <div class="booking-container">
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-group">
+                        <label for="name">Ім'я *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Дата *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Час *</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="guests">Кількість гостей *</label>
+                        <select id="guests" name="guests" required>
+                            <option value="1">1 гость</option>
+                            <option value="2">2 гості</option>
+                            <option value="3">3 гості</option>
+                            <option value="4">4 гості</option>
+                            <option value="5">5+ гостей</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Особливі побажання</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Наприклад: столик біля вікна..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Забронювати столик</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Vanilla Coffee</h4>
+                <p>Створюємо ідеальну каву для кожного вашого настрою</p>
+            </div>
+            <div class="footer-section">
+                <h4>Контакти</h4>
+                <p><i class="fas fa-map-marker-alt"></i> вул. Зелена, 20, Львів</p>
+                <p><i class="fas fa-phone"></i> +380 68 526 9998</p>
+                <p><i class="fas fa-envelope"></i> melnikdasa290@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Соціальні мережі</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/svmxwr?igsh=MXVseDJxNWJnMDJ1eg==" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Vanilla Coffee. Власник: Мельник Дар'я. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Дякуємо за бронювання! Ми зв\'яжемося з вами для підтвердження.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

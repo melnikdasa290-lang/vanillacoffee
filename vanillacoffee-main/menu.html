@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню - Vanilla Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <i class="fas fa-mug-hot"></i>
+                <span>Vanilla Coffee</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="menu.html" class="active">Меню</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="booking.html">Бронювання</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="full-menu">
+            <h1 class="section-title">Наше Меню</h1>
+            
+            <div class="menu-category">
+                <h2>Гарячі напої</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/espresso.jpg" alt="Еспресо">
+                        </div>
+                        <div class="item-info">
+                            <h3>Еспресо</h3>
+                            <p>Класичний міцний еспресо</p>
+                        </div>
+                        <span class="item-price">60 грн</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/americano.jpg" alt="Американо">
+                        </div>
+                        <div class="item-info">
+                            <h3>Американо</h3>
+                            <p>Еспресо з гарячою водою</p>
+                        </div>
+                        <span class="item-price">60 грн</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/cappuccino.jpg" alt="Капучино">
+                        </div>
+                        <div class="item-info">
+                            <h3>Капучино</h3>
+                            <p>З ніжною молочною пінкою</p>
+                        </div>
+                        <span class="item-price">80 грн</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/latte.jpg" alt="Лате">
+                        </div>
+                        <div class="item-info">
+                            <h3>Лате</h3>
+                            <p>М'яка кава з молоком</p>
+                        </div>
+                        <span class="item-price">90 грн</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/raf.jpg" alt="Раф">
+                        </div>
+                        <div class="item-info">
+                            <h3>Раф</h3>
+                            <p>Ніжна кава з вершками</p>
+                        </div>
+                        <span class="item-price">100 грн</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/matcha-latte.jpg" alt="Матча лате">
+                        </div>
+                        <div class="item-info">
+                            <h3>Матча-лате</h3>
+                            <p>Традиційний японський чай</p>
+                        </div>
+                        <span class="item-price">120 грн</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h2>Холодні напої</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/ice-latte.jpg" alt="Айс лате">
+                        </div>
+                        <div class="item-info">
+                            <h3>Айс-лате</h3>
+                            <p>Лате з льодом та сиропом</p>
+                        </div>
+                        <span class="item-price">100 грн</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/espresso-tonic.jpg" alt="Еспресо тонік">
+                        </div>
+                        <div class="item-info">
+                            <h3>Еспресо-тонік</h3>
+                            <p>Освіжаюча комбінація</p>
+                        </div>
+                        <span class="item-price">100 грн</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/ice-matcha.jpg" alt="Айс матча">
+                        </div>
+                        <div class="item-info">
+                            <h3>Айс матча-лате</h3>
+                            <p>Холодний матча з молоком</p>
+                        </div>
+                        <span class="item-price">120 грн</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/matcha-tonic.jpg" alt="Матча тонік">
+                        </div>
+                        <div class="item-info">
+                            <h3>Матча-тонік</h3>
+                            <p>Освіжаючий матча з тоніком</p>
+                        </div>
+                        <span class="item-price">110 грн</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/cream-soda.jpg" alt="Крем сода">
+                        </div>
+                        <div class="item-info">
+                            <h3>Крем-сода</h3>
+                            <p>Ніжна сода з вершками</p>
+                        </div>
+                        <span class="item-price">130 грн</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/lemonade-classic.jpg" alt="Лимонад">
+                        </div>
+                        <div class="item-info">
+                            <h3>Лимонад класичний</h3>
+                            <p>Освіжаючий лимонад</p>
+                        </div>
+                        <span class="item-price">100 грн</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/grapefruit-lemonade.jpg" alt="Грейпфрутовий лимонад">
+                        </div>
+                        <div class="item-info">
+                            <h3>Лимонад грейпфрутовий</h3>
+                            <p>Лимонад з грейпфрутом</p>
+                        </div>
+                        <span class="item-price">110 грн</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h2>Десерти</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/brownie-classic.jpg" alt="Брауні">
+                        </div>
+                        <div class="item-info">
+                            <h3>Брауні класичне</h3>
+                            <p>Шоколадний десерт з горіхами</p>
+                        </div>
+                        <span class="item-price">110 грн</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/brownie-caramel.jpg" alt="Брауні з карамеллю">
+                        </div>
+                        <div class="item-info">
+                            <h3>Брауні з карамеллю</h3>
+                            <p>Шоколадний брауні з карамеллю</p>
+                        </div>
+                        <span class="item-price">120 грн</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/basque-chocolate.jpg" alt="Чизкейк шоколад">
+                        </div>
+                        <div class="item-info">
+                            <h3>Чизкейк шоколад-вишня</h3>
+                            <p>Ніжний чизкейк з шоколадом</p>
+                        </div>
+                        <span class="item-price">150 грн</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/basque-coconut.jpg" alt="Чизкейк кокос">
+                        </div>
+                        <div class="item-info">
+                            <h3>Чизкейк з кокосом</h3>
+                            <p>Чизкейк з кокосовим смаком</p>
+                        </div>
+                        <span class="item-price">140 грн</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/basque-blueberry.jpg" alt="Чизкейк чорниця">
+                        </div>
+                        <div class="item-info">
+                            <h3>Чизкейк з чорницею</h3>
+                            <p>Чизкейк з свіжою чорницею</p>
+                        </div>
+                        <span class="item-price">145 грн</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Vanilla Coffee</h4>
+                <p>Створюємо ідеальну каву для кожного вашого настрою</p>
+            </div>
+            <div class="footer-section">
+                <h4>Контакти</h4>
+                <p><i class="fas fa-map-marker-alt"></i> вул. Зелена, 20, Львів</p>
+                <p><i class="fas fa-phone"></i> +380 68 526 9998</p>
+                <p><i class="fas fa-envelope"></i> melnikdasa290@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Соціальні мережі</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/svmxwr?igsh=MXVseDJxNWJnMDJ1eg==" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Vanilla Coffee. Власник: Мельник Дар'я. Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>
